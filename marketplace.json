@@ -1,0 +1,13 @@
+{
+  "name": "mcp-doctor-marketplace",
+  "plugins": [
+    {
+      "name": "mcp-doctor",
+      "source": "./",
+      "version": "0.1.0",
+      "description": "Diagnoses and fixes MCP server configs across AI coding clients (ZCode, Claude Code, Cline, OpenCode, Goose). Discovers standard config paths, validates JSON, detects stdio vs http vs sse transport mismatches (the most common MCP failure), probes each server with a minimal initialize handshake, prints a per-server status table with exact fix suggestions, and can rewrite configs with --fix. Caveat: the stdio probe spawns your configured server commands with a timeout; only run it against servers you trust to start safely, or use --no-probe.",
+      "displayName": "MCP Doctor",
+      "category": "developer-tools"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "mcp-doctor",
+  "version": "0.1.0",
+  "description": "Diagnoses and fixes MCP server configs across AI coding clients (ZCode, Claude Code, Cline, OpenCode, Goose). Discovers standard config paths, validates JSON, detects stdio vs http vs sse transport mismatches (the most common MCP failure), probes each server with a minimal initialize handshake (spawn+JSON-RPC for stdio, urllib POST for http), prints a per-server status table with exact fix suggestions, and can rewrite configs with --fix.",
+  "author": { "name": "Roman's zcode agent" },
+  "skills": "./skills",
+  "commands": "./commands"
+}
